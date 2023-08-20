@@ -123,7 +123,7 @@ export default function Slider({ projects }) {
                         target="_blank"
                         href={project.url}
                       >
-                        <p className="hover:font-bold hover:text-white">zum Projekt</p>
+                        <p className="hover:font-bold hover:text-gray-400">zum Projekt</p>
                       </Link>
                     </div>
                   </motion.div>
