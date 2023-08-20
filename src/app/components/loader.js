@@ -17,8 +17,8 @@ const Loader = ({ setLoading }) => {
    
         
     <motion.div initial={{opacity: 0}} transition={{opacity: 1, duration: 1000, delay: 0.1}} animate={{opacity: 1}} className="absolute z-50 w-48 h-48 transform -translate-x-1/2 -translate-y-1/2 rounded-full top-1/2 left-1/2 translate">
-    <h1 className="absolute z-50 justify-center m-auto text-6xl font-bold text-center">
-            2023
+    <h1 className="text-4xl font-bold text-center ">
+            Einen Moment bitte
           </h1>
     </motion.div>
       <motion.div
