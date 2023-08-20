@@ -1,9 +1,10 @@
 "use client";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 import Slider from "./components/slider";
+import Loader from "./components/loader";
 
 const projects = [
   {
@@ -75,29 +76,30 @@ const projects = [
 ]
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    loading ? document.querySelector("body").classList.add("loading") : document.querySelector("body").classList.remove("loading");
+  }, [loading]);
 
   return (
 
-    <>
+    <AnimatePresence>
+
+    {loading ? (<motion.div>
+      <Loader setLoading={setLoading} />
+    </motion.div>) : (
+      <>
+     
     <Slider 
       projects={projects}
-      slides={
-        
-        [
-
-        '/images/00.jpg',
-        '/images/01.jpg',
-        '/images/02.jpg',
-        '/images/04.jpg', 
-        '/images/05.jpg',
-        '/images/06.jpg',
-        '/images/07.jpg',
-        '/images/08.jpg',
-        '/images/09.jpg',
-        '/images/10.jpg',
-      ]}
     />
+   
     </>
+    )}
     
+  
+    
+    </AnimatePresence>
   );
 }
