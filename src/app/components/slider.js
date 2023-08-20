@@ -73,10 +73,10 @@ export default function Slider({ projects }) {
       </div>
 
       <div className="top-[440px]
-       absolute z-0 w-full h-[240px] md:bg-[#FFA500]"></div>
+       absolute z-0 w-full h-[280px] md:bg-[#FFA500]"></div>
       
       <div className="relative z-50 w-10/12 m-auto overflow-hidden max-w-screen-2xl">
-        <div className="grid items-center justify-center w-full h-auto grid-cols-3 gap-2 pt-6 pb-12 m-auto md:flex">
+        <div className="grid items-center justify-center w-full h-auto grid-cols-3 gap-2 pt-6 m-auto md:flex">
           {projects
             .slice(firstVisibleIndex, firstVisibleIndex + maxVisible)
             .map((project, index) => (
@@ -121,10 +121,11 @@ export default function Slider({ projects }) {
         </div>
       </div>
 
-    <div className="w-10/12 m-auto pt-[12vh] mb-12" id="footer">
+<div className="w-full ">
+    <div className="w-10/12 m-auto pt-[12vh] pb-12 " id="footer">
       <Image src={Logo} />
     </div>
-   
+    </div>
     </main>
   );
 }
