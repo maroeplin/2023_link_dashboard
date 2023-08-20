@@ -10,17 +10,20 @@ export default function Slider({ slides }) {
   const [firstVisibleIndex, setFirstVisibleIndex] = useState(0);
   const [selectedItemIndex, setSelectedItemIndex] = useState(null);
 
+  const getMaxVisibleBasedOnWindowWidth = () => {
+    if (typeof window !== 'undefined') {
+      if (window.innerWidth < 500) {
+        return 3;
+      } else {
+        return 4;
+      }
+    }
+    return 4; // Fallback value for server-side rendering
+  };
+
   useEffect(() => {
-    
-    if(typeof window !== 'undefined') {
-        if (window.innerWidth < 500) {
-            setMaxVisible(3);
-          } else {
-            setMaxVisible(4);
-          }    
-        }
-        }, [window.innerWidth]);
-    
+    setMaxVisible(getMaxVisibleBasedOnWindowWidth());
+  }, []);
 
    
   const showNext = () => {
