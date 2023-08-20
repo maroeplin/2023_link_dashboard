@@ -63,7 +63,7 @@ export default function Slider({ projects }) {
     
              <div className="flex gap-4 pt-2">
             <p className="font-semibold cursor-pointer hover:text-[#FFA500]" ><Link href="https://im.f3.hs-hannover.de/" target="blank">Zum Studiengang</Link></p>
-            <p className="font-semibold cursor-pointer hover:text-[#FFA500]" href="#footer"><Link href="#footer">Impressum</Link></p>
+          
             </div>
           </div>
     
@@ -137,7 +137,7 @@ export default function Slider({ projects }) {
           <Image src={Logo} alt="Logo Hochschule Hannover"/>
         </div>
     
-        <div>
+        <div className="pt-12 pl-2 md:pt-0">
           <h5>Verantwortlich für diese Seite:</h5>
           <p>Marcel Rose</p>
           <br/>
