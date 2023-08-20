@@ -12,7 +12,7 @@ export default function Slider({ slides }) {
 
   useEffect(() => {
     
-    if(typeof window == 'undefined') {
+    if(typeof window !== 'undefined') {
         if (window.innerWidth < 500) {
             setMaxVisible(3);
           } else {
