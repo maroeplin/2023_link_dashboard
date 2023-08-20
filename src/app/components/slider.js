@@ -11,18 +11,25 @@ export default function Slider({ slides }) {
   const [selectedItemIndex, setSelectedItemIndex] = useState(null);
 
   useEffect(() => {
-    if (window.innerWidth < 500) {
-      setMaxVisible(3);
-    } else {
-      setMaxVisible(4);
-    }
-  }, [window.innerWidth]);
+    
+    if(typeof window == 'undefined') {
+        if (window.innerWidth < 500) {
+            setMaxVisible(3);
+          } else {
+            setMaxVisible(4);
+          }    
+        }
+        }, [window.innerWidth]);
+    
 
+   
   const showNext = () => {
     if (firstVisibleIndex + maxVisible < slides.length) {
       setFirstVisibleIndex(firstVisibleIndex + 1);
     }
   };
+
+
 
   const showPrevious = () => {
     if (firstVisibleIndex > 0) {
