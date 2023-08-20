@@ -52,7 +52,7 @@ const projects = [
   {
     index: 7,
     name: 'Cina Behzad und Ahmad Aroud',
-    url: 'https://metacampus-mmsys.vercel.app/',
+    url: 'https://codepen.io/Cina-Behzad/pen/GRwLvLw',
     image: '/images/08.jpg'
   },
   {
