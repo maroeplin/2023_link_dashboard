@@ -57,7 +57,7 @@ export default function Slider({ projects }) {
             <div className="pt-24 text-3xl font-bold text-start">
             <h1 className="pb-4 text-sm font-light ">Studiengang Informationsmanagement</h1>
                 <h1 className="pb-4 font-bold ">Multimediasysteme 2023</h1></div>
-            <p className="w-2/3">Willkommen zu den Projektarbeiten der Studierenden, aus dem Seminar Multimediasysteme, welches Teil des Studiengangs Informationsmanagement ist. Gelehrt wird dieser an der Hochschule in Hannover. Viel Spaß mit den entstandenen Arbeiten! 
+            <p className="w-2/3">Willkommen zu den Projektarbeiten der Studierenden aus dem Seminar Multimediasysteme, das Teil des Studiengangs Informationsmanagement ist. Gelehrt wird dieser an der Hochschule in Hannover. Viel Spaß mit den entstandenen Arbeiten! 
     
              </p>
     
